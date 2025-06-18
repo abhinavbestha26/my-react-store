@@ -9,9 +9,11 @@ import Login from './Components/Login'
 function App() {
   return (
     <>
+    
 <BrowserRouter>
+<Header/>
 <Routes>
-  <Header/>
+  
   <Route path='/' element={<Home/>}/>
   <Route path='/Login' element={<Login/>}/>
 </Routes>

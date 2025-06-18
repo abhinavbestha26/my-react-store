@@ -3,16 +3,13 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <div>
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',backgroundColor:'yellow',padding: '15px'}}>
       <h1>Header</h1>
-      <ul>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='/Login'>Login</Link>
-        </li>
-      </ul>
+      <div style={{display:'flex',gap:'20px'}}>
+      <Link to='/'>Home</Link>
+      
+      <Link to='/Login'>Login</Link>
+      </div>
     </div>
   );
 }
